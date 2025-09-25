@@ -1,0 +1,29 @@
+﻿@model Branch
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="col-lg-4">
+        <h2>POWA Branches</h2>
+        <form method="post">
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" class="form-control" name="Name" value="@Model.Name" />
+            </div>
+            <div class="form-group">
+                <label>Contact Person:</label>
+                <input type="text" class="form-control" name="ContactPerson" value="@Model.ContactPerson" />
+            </div>
+            <div class="form-group">
+                <label>Contact:</label>
+                <input type="text" class="form-control" name="Contact" value="@Model.Contact" />
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <input type="text" class="form-control" name="Address" value="@Model.Address" />
+            </div>
+            <button type="submit" class="btn btn-default">Update</button>
+        </form>
+    </div>
+</div>

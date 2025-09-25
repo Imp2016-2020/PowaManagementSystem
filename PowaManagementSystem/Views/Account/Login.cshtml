@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header"><h2>Login</h2></div>
+    <form method="post">
+        @if (ViewBag.Errors != null)
+        {
+            <div class="error">
+                @foreach (var error in ViewBag.Errors)
+                {
+                    <p>@error</p>
+                }
+            </div>
+        }
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" />
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" />
+        </div>
+        <div class="input-group">
+            <button type="submit" class="btn">Login</button>
+        </div>
+        <p>Not yet a member? <a href="@Url.Action("Register")">Sign up</a></p>
+    </form>
+</body>
+</html>
