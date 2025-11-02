@@ -12,7 +12,7 @@ This system replaces manual workflows with a centralized digital solution, enabl
 -Make sure Git is installed on your computer
 -Open your terminal or command prompt
 -Type this command and press Enter
--git clone https://github.com/Imp2016-2020/PowaManagementSystem.git
+-git clone [https://github.com/Imp2016-2020/PowaManagementSystem.git]
 -Go into the project folder
 -cd PowaManagementSystem
 -Open the project in Visual Studio
